@@ -1,0 +1,26 @@
+.menubar {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 16px;
+  background: white;
+  border-bottom: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.menubar button {
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 4px 10px;
+  cursor: pointer;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  transition: all 0.12s;
+  font-family: 'Inter', sans-serif;
+}
+
+.menubar button:hover { background: var(--sky-1); color: var(--sky-3); border-color: var(--sky-2); }
+.menubar button.is-active { background: var(--green-1); color: #059669; border-color: var(--green-2); }
+
+.sep { width: 1px; height: 20px; background: var(--border); margin: 0 4px; }
